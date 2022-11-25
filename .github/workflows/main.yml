@@ -14,7 +14,7 @@ jobs:
 
       - name: Generate certificate
         run: |
-          echo "Issue: ${{ github.event.issue.number }}" > issue.txt
+          echo "Issue data is: ${{ github.event.issue.body }}" > issue.txt
 
       - name: Commit files
         run: |
