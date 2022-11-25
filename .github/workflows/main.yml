@@ -34,7 +34,6 @@ jobs:
           issue-number: ${{ github.event.issue.number }}
           reactions: '+1'
           body: |
-
             ${{ github.event.issue.body }}
 
       # - name: Commit files
