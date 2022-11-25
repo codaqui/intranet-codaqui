@@ -1,8 +1,8 @@
 name: "Solicitar Certificado :)"
-title: "[CERTIFICADO]: Nova solicitação de Certificado"
+title: "[CERTIFICADO]: <Digite seu usuário aqui>"
 description: Terminei uma trilha desejo receber meu certificado.
 assignees:
-  - codaqui/conselho
+  - endersonmenezes
 body:
   
   - type: checkboxes
