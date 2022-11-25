@@ -1,9 +1,10 @@
 name: Push commit
 on: 
   issues:
-    tupes:
+    types:
       - opened
       - reopened
+      - labeled
 jobs:
   report:
     runs-on: ubuntu-latest
