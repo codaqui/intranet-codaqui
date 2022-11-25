@@ -29,6 +29,18 @@ jobs:
           echo "Issue Comments: ${{ github.event.issue.comments }}"
           echo "Issue Reactions: ${{ github.event.issue.reactions }}"
 
+      - name: Create comment
+        uses: peter-evans/create-or-update-comment@v2
+        with:
+          issue-number: ${{ github.event.issue.number }}
+          body: |
+          
+            This is a multi-line test comment automated by GitHub Actions
+            - With GitHub **Markdown** :sparkles:
+            - Created by [create-or-update-comment][1]
+
+            [1]: https://github.com/peter-evans/create-or-update-comment
+          reactions: '+1'
       # - name: Commit files
       #   run: |
       #     git config --global user.name 'Codaqui Bot - Github Actions'
