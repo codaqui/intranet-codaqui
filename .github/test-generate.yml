@@ -1,0 +1,22 @@
+name: Push commit
+on: 
+  issues:
+    tupes:
+      - opened
+      - reopened
+jobs:
+  report:
+    runs-on: ubuntu-latest
+    steps:
+
+      - uses: actions/checkout@v2
+
+      - name: Create report file
+        run: date +%s > report.txt
+
+      - name: Commit report
+        run: |
+          git config --global user.name 'Codaqui Bot - Github Actions'
+          git config --global user.email 'contato@codaqui.dev'
+          git commit -am "Issue Number: ${{ github.event.issue.number }} - ${{ github.event.issue.title }}" report.txt
+          git push
