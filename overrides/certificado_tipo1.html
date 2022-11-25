@@ -1,0 +1,37 @@
+{% extends "base.html" %}
+{% block libs %}
+<style type='text/css'>
+    .logo {
+        color: tan;
+    }
+
+    .marquee {
+        color: tan;
+        font-size: 48px;
+        margin: 20px;
+    }
+    .assignment {
+        margin: 20px;
+    }
+    .person {
+        border-bottom: 2px solid black;
+        font-size: 32px;
+        font-style: italic;
+        margin: 20px auto;
+        width: 400px;
+    }
+    .reason {
+        margin: 20px;
+    }
+</style>
+{% endblock %}
+{% block content %}
+<div>
+    Organização: {{page.meta.org}} <br>
+    Nome: {{page.meta.name}} <br>
+    Curso: {{page.meta.course}} <br>
+    Data: {{page.meta.date}} <br>
+    Nota: {{page.meta.grade}} <br>
+    Código: {{page.meta.code}} <br>
+</div>
+{% endblock %}

@@ -1,0 +1,12 @@
+site_name: Certificado - Codaqui
+site_author: codaqui // endersonmenezes
+site_description: "Queremos democratizar o aprendizado tecnológico, e aproximar novas gerações do conteúdo tecnico."
+copyright: Codaqui &copy; Copyright - 2022 - Todos os direitos reservados - CNPJ 44.593.429/0001-05
+repo_url: https://github.com/codaqui
+edit_uri: 'https://github.com/codaqui/institucional/tree/main/docs'
+
+theme:
+  name: material
+  custom_dir: overrides
+
+plugins: []
